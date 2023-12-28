@@ -1130,6 +1130,8 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
+  width: 100%;
+  min-height: 10vh;
   background: #fff;
   padding: 60px 0;
 }
