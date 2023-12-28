@@ -548,7 +548,7 @@ section {
 --------------------------------------------------------------*/
 #about {
   width: 100%;
-  min-height: 100vh;
+  min-height: 20vh;
   background: url("../img/about.png") top center;
   background-size: cover;
   position: relative;
@@ -1133,9 +1133,12 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
+  width: 100%;
+  min-height: 100vh;
   background: #fff;
   padding: 60px 0;
 }
+
 
 .team .member {
   margin-bottom: 20px;
