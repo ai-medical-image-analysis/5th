@@ -350,19 +350,20 @@ Original high-quality contributions, in terms of databases, surveys, studies, fo
  At least one author of each accepted submission must present the paper at the workshop in person.  
 
 
+<br> </br>
 
         <div class="d-flex align-items-center justify-content-center">
           <h1>The Competition</h1>
         </div>
 
-<br> </br>
+
 
 
 <br><span> The Competition is a continuation of the ABAW Competition held last year in CVPR, the year before in ECCV and CVPR, the year before in ICCV and the year before in IEEE FG. It is split into the five below mentioned Challenges. Participants are invited to participate in at least one of these Challenges.
  </span></br>
 
 
-
+<br> </br>
   <div class="d-flex align-items-center justify-content-center">
           <h2>Valence-Arousal (VA) Estimation Challenge</h2>
         </div>
@@ -373,20 +374,22 @@ Original high-quality contributions, in terms of databases, surveys, studies, fo
 For this Challenge, an augmented version of the Aff-Wild2 database will be used. This database is audiovisual (A/V) and in total consists of 594 videos of around 3M frames of 584 subjects annotated in terms of valence and arousal.
 </span></br>
  
+<br> </br>
+
 <h3>Rules</h3> 
 <br><span> 
 Only uni-task solutions will be accepted for this Challenge; this means that the teams should only develop uni-task (valence-arousal estimation task) solutions.
 Teams are allowed to use any -publicly or not- available pre-trained model (as long as it has not been pre-trained on Aff-Wild2). The pre-trained model can be pre-trained on any task (eg VA estimation, Expression Classification, AU detection, Face Recognition). However when the teams are refining the model and developing the methodology they should not use any other annotations (expressions or AUs): the methodology should be purely uni-task, using only the VA annotations. This means that teams are allowed to use other databases' VA annotations, or generated/synthetic data, or any affine transformations, or in general data augmentation techniques (e.g. <a href="https://openaccess.thecvf.com/content/CVPR2022W/ABAW/papers/Psaroudakis_MixAugment__Mixup_Augmentation_Methods_for_Facial_Expression_Recognition_CVPRW_2022_paper.pdf">our former work</a>) for increasing the size of the training dataset.   
 </span></br>
  
-
+<br> </br>
  
 <h3>Performance Assessment</h3> 
 <br><span> 
 The performance measure is the mean Concordance Correlation Coefficient (CCC) of valence and arousal: </span></br>
-<br><span>  P = <h:frac> 
-n='CCC_arousal + CCC_valence' d='2' </h:frac>  </span></br>
+<br><span>  P = <h:frac>n='CCC_arousal + CCC_valence' d='2' </h:frac>  </span></br>
 
+<br> </br>
  
 <h3>Baseline Results</h3> 
 <br><span> 
@@ -395,6 +398,8 @@ The baseline network is a pre-trained on ImageNet ResNet-50 and its performance 
 <br><span> CCC_arousal = 0.20 </span></br>
 <br><span> P = <h:frac> 
 n='CCC_arousal + CCC_valence' d='2' </h:frac> = 0.22 </span></br>
+
+<br> </br>
 
 
 
