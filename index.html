@@ -386,13 +386,13 @@ Teams are allowed to use any -publicly or not- available pre-trained model (as l
  
 <h3>Performance Assessment</h3> 
 <br><span> 
-The performance measure is the mean Concordance Correlation Coefficient (CCC) of valence and arousal: </span></br>
+The performance measure (P) is the mean Concordance Correlation Coefficient (CCC) of valence and arousal: </span></br>
 <br><span>  
 
 <table>
        
          <td>
-            P = <div class="num"> CCC<sub>arousal</sub> + CCC<sub>valence</sub> </div>
+             <div class="num"> CCC<sub>arousal</sub> + CCC<sub>valence</sub> </div>
             <div class="denom">2</div>  
           </td>
         </tr>
@@ -409,10 +409,69 @@ The performance measure is the mean Concordance Correlation Coefficient (CCC) of
 The baseline network is a pre-trained on ImageNet ResNet-50 and its performance on the validation set is: </span></br>
 <br><span> CCC_valence = 0.24 </span></br>
 <br><span> CCC_arousal = 0.20 </span></br>
-<br><span> P = <h:frac> 
-n='CCC_arousal + CCC_valence' d='2' </h:frac> = 0.22 </span></br>
+<br><span> P = = 0.22 </span></br>
 
 <br> </br>
+
+
+
+
+
+
+
+
+
+
+
+<br> </br>
+  <div class="d-flex align-items-center justify-content-center">
+          <h2>Expression (Expr) Recognition Challenge</h2>
+        </div>
+
+
+<h3>Database</h3> 
+<br><span>
+For this Challenge, the Aff-Wild2 database will be used. This database is audiovisual (A/V) and in total consists of 548 videos of around 2.7M frames that are annotated in terms of the 6 basic expressions (i.e., anger, disgust, fear, happiness, sadness, surprise), plus the neutral state, plus a category 'other' that denotes expressions/affective states other than the 6 basic ones.</span></br>
+ 
+<br> </br>
+
+<h3>Rules</h3> 
+<br><span> 
+Only uni-task solutions will be accepted for this Challenge; this means that the teams should only develop uni-task (expression classification task) solutions.
+Teams are allowed to use any -publicly or not- available pre-trained model (as long as it has not been pre-trained on Aff-Wild2). The pre-trained model can be pre-trained on any task (eg VA estimation, Expression Classification, AU detection, Face Recognition). However when the teams are refining the model and developing the methodology you should not use any other annotations (VA or AUs): the methodology should be purely uni-task, using only the Expr annotations. This means that teams are allowed to use other databases' Expr annotations, or generated/synthetic data (e.g. the data provided in the ECCV 2022 run of the ABAW Challenge), or any affine transformations, or in general data augmentation techniques (e.g. <a href="https://openaccess.thecvf.com/content/CVPR2022W/ABAW/papers/Psaroudakis_MixAugment__Mixup_Augmentation_Methods_for_Facial_Expression_Recognition_CVPRW_2022_paper.pdf">our former work</a>) for increasing the size of the training dataset.   
+</span></br>
+ 
+<br> </br>
+ 
+<h3>Performance Assessment</h3> 
+<br><span> 
+The performance measure (P) is the average F1 Score across all 8 categories: </span></br>
+<br><span>  
+
+<table>
+       
+         <td>
+             <div class="num"> &sum F1 </div>
+            <div class="denom">8</div>  
+          </td>
+        </tr>
+        </table>
+
+
+
+
+
+<br> </br>
+ 
+<h3>Baseline Results</h3> 
+<br><span> 
+The baseline network is a pre-trained VGGFACE (with fixed convolutional weights) and its performance on the validation set is:
+<br><span> P = = 0.23 </span></br>
+
+<br> </br>
+
+
+
 
 
 
