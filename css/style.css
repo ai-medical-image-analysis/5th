@@ -404,6 +404,23 @@ h6 {
 
 /*--------------------------------*/
 
+<style>
+    table {
+  font-size: 16px;
+}
+ 
+div.num {
+  border-bottom:1px solid;
+  text-align:center;
+  font-size: 0.8em;
+}
+ 
+div.denom {
+  font-size: 0.8em;
+  border-top: 1px solid;
+  text-align: center;
+}
+  </style>
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -585,27 +602,6 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------*/
-
-<style>
-    table {
-  font-size: 16px;
-}
- 
-div.num {
-  border-bottom:1px solid;
-  text-align:center;
-  font-size: 0.8em;
-}
- 
-div.denom {
-  font-size: 0.8em;
-  border-top: 1px solid;
-  text-align: center;
-}
-  </style>
-
-
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -738,7 +734,7 @@ div.denom {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   padding: 60px 0;
 }
