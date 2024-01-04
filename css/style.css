@@ -24,7 +24,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -33,6 +33,23 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+h1 {
+  font-family: "Raleway", sans-serif;
+  width: 100px;
+  background: salmon;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.overflow {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
