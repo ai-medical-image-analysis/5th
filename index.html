@@ -283,15 +283,15 @@ For any requests or enquiries regarding the Workshop, please contact: <a href="
        </div>     
  </section><!-- End Team Section -->
         
-          <h2> &nbsp &nbsp &nbsp &nbsp &nbsp Data Chairs</h2>
+          <h2> &nbsp &nbsp &nbsp &nbsp Data Chairs</h2>
           
 
 <div class="text">
    
 <p>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Anastasios Arsenos, &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp National Technical University of Athens   <br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Paraskevi Theofilou, &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp National Technical University of Athens    <br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Manos Seferis, &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   National Technical University of Athens    <br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Anastasios Arsenos, &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp National Technical University of Athens   <br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Paraskevi Theofilou, &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp National Technical University of Athens    <br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Manos Seferis, &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   National Technical University of Athens    <br>
 
 </p>
 
@@ -553,16 +553,13 @@ The PHAROS-AFE-AIMI Workshop includes a Competition which is split into two Chal
         </div>
 
 <h3>Description</h3> 
-CT scans have been aggregated from various hospitals and medical centres. 
-Each CT scan has been manually annotated with respect to Covid-19 and non-Covid-19 categories.
-The resulting dataset is split into training, validation and test partitions. 
-Participants will be provided with a training set that consists of: i) the annotated data of the 1st Challenge which are aggregated from some hospitals and medical centres (case A); 
-ii) a small number of annotated data and a larger number of non-annotated data (case B), 
-all of which are aggregated from other hospitals and medical centres and their distribution is different from that of case A. 
-Participants will be provided with a validation set that consists of a small number of annotated data of case B. 
-Competition participating teams will need to develop AI/ML/DL models for Covid-19 prediction. 
-Performance of the different approaches will be evaluated on a test set (that contains data of case B) in terms of the ‘macro’ F1 score.
-
+CT scans have been collected from four distinct hospitals and medical centers. 
+Each scan has been manually annotated to indicate whether it belongs to the Covid-19 or non-Covid-19 category. 
+The dataset is divided into training, validation, and test subsets.
+Participants will receive the CT scans along with the source identifier for each scan, represented by an ID number from 0 to 3. 
+Competing teams are required to develop AI, machine learning, or deep learning models for Covid-19 classification.
+Model performance will be evaluated on the test set, which also contains CT scans collected from the same four distinct hospitals and medical centers. 
+Model performance will be based on the average macro F1 score achieved across all four sources (hospitals and medical centers), ensuring fair and robust assessment across diverse data distributions.
         
 
 <h3>Database</h3> 
