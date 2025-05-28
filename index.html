@@ -607,7 +607,7 @@ TBC
 <h3>Description</h3> 
 
 The dataset consists of chest CT scans of lung cancer, Covid-19 and healthy subjects. 
-Each scan has been annotated to indicate whether it belongs to a healthy subject or a subject diagnosed with Adenocarcinoma, or with Squamous Cell Carcinoma ('G'), or with Covid-19.
+Each scan has been annotated to indicate whether it belongs to a healthy subject or a subject diagnosed with Adenocarcinoma, or with Squamous Cell Carcinoma, or with Covid-19.
 Each scan contains information on whether the subject is male or female. 
 The dataset is divided into training, validation, and test subsets.
 Participants will receive the CT scans along with the male/female subject information.
@@ -619,13 +619,17 @@ Model performance will be evaluated on the test set and will be based on the ave
 <br> </br>
 
 <h3>Rules</h3> 
-The participating teams will be able to use any publicly available datasets as long as they report it in their submitted final paper.
+Participating teams may use any publicly available pre-trained models, provided these models have not been specifically pre-trained to classify between healthy individuals and those diagnosed with Adenocarcinoma, Squamous Cell Carcinoma, or Covid-19.
+However, all model fine-tuning and methodological development must be conducted exclusively using the dataset provided for the competition.
  
 <br> </br>
  
 <h3>Performance Assessment</h3> 
 <p>
-The performance measure (P) is the average of per-gender macro F1-scores: </p>
+The performance measure (P) is the average of per-gender macro F1-scores.
+To calculate this, at first one needs to split the set by gender (Subset A: all male samples; Subset B: all female samples) 
+and then compute the macro F1 on each. Therefore the Final Score is:
+</p>
 
 <p><small>  <img src="img/aaa.png" alt="GRNET" class="center" width="262" height="84" > </small></p>
 
